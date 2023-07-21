@@ -1,0 +1,17 @@
+DIGEST ef9f1e888c95c60f180b407e2c2e25d6
+FdeMorgan3
+prf 8:16 <> deMorgan3
+binder 26:26 <> A:1
+binder 28:28 <> B:2
+R42:45 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R38:39 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R36:36 Coq.Init.Logic <> ::type_scope:'~'_x not
+R37:37 deMorgan3 <> A:1 var
+R40:40 Coq.Init.Logic <> ::type_scope:'~'_x not
+R41:41 deMorgan3 <> B:2 var
+R46:47 Coq.Init.Logic <> ::type_scope:'~'_x not
+R52:52 Coq.Init.Logic <> ::type_scope:'~'_x not
+R49:50 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R48:48 deMorgan3 <> A:1 var
+R51:51 deMorgan3 <> B:2 var
+R299:307 deMorgan3 <> deMorgan3 thm
