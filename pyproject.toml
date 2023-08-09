@@ -27,7 +27,7 @@ scop = "^0.0.1"
 ipython = "^8.11.0"
 pyglet = "^2.0.5"
 coq-jupyter = "^1.6.0"
-python-barcode = {extras = ["images"], version = "^0.15.1"}
+python-barcode = { extras = ["images"], version = "^0.15.1" }
 
 
 [tool.poetry.group.dev.dependencies]
@@ -57,16 +57,16 @@ max-line-length = 79
 # E203: ":"の前の空白を入れないルール
 # W503: 演算子の前に改行しないようにするルール
 extend-ignore = ["E203", "W503"]
-exclude = [".venv", ".git", "__pycache__",]
+exclude = [".venv", ".git", "__pycache__"]
 max-complexity = 10
 
 [tool.isort]
 profile = "black"
 line_length = 79
 # 各ライブラリ群の説明を追記する
-import_heading_stdlib      = "Standard Library"
-import_heading_thirdparty  = "Third Party Library"
-import_heading_firstparty  = "First Party Library"
+import_heading_stdlib = "Standard Library"
+import_heading_thirdparty = "Third Party Library"
+import_heading_firstparty = "First Party Library"
 import_heading_localfolder = "Local Library"
 # from third_party import lib1, lib2...のような記述時の改行方法の設定(https://pycqa.github.io/isort/docs/configuration/multi_line_output_modes.html)
 multi_line_output = 3
