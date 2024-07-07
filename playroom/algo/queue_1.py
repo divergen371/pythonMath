@@ -29,6 +29,6 @@ def dequeue():
 for i in range(6):
     enqueue(i)
 
-for i in range(6):
+for _i in range(6):
     d = dequeue()
     print("取り出したデータ", d)
