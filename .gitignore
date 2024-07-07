@@ -201,3 +201,4 @@ pip-selfcheck.json
 test/
 Pandas_100_knocks-master/
 *.code-workspace
+/.DS_Store
