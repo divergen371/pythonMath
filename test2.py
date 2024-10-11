@@ -1,13 +1,7 @@
-def test(a: int) -> bool:
-    if a == 0:
-        return True
-    else:
-        return False
+a = [1, 2, 3]
+b = [1, 2, 3]
 
-
-def test2(a: int) -> bool:
-    return a == 0
-
-
-print(test(0))
-print(test2(0))
+if a == b:
+    print("おなじじゃね？")
+else:
+    print("違うじゃん")

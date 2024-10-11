@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -34,6 +35,8 @@ shodan = "^1.30.1"
 tnefparse = "^1.4.0"
 bcrypt = "^4.1.2"
 torch = "^2.3.0"
+simpy = "^4.1.1"
+cinemagoer = "^2023.5.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -78,10 +81,53 @@ import_heading_localfolder = "Local Library"
 multi_line_output = 3
 # 最後の要素の末尾に","を付けるようにする設定
 include_trailing_comma = true
+ensure_newline_before_comments = true
+use_parentheses = true
+force_grid_wrap = 0
 
 [tool.ruff]
-select = ["E", "F", "D"]
-ignore = ["D415"]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+line-length = 79
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E", "F", "D", "I", "N", "Q"]
+ignore = ["D415", "E203"]
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+docstring-code-format = false
+
 [tool.ruff.pydocstyle]
 convention = "google"
 [tool.mypy]
