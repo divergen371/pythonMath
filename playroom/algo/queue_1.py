@@ -4,7 +4,7 @@ head = 0
 tail = 0
 
 
-def enqueue(d):
+def enqueue(d: int) -> None:
     global tail
     nt = (tail + 1) % MAX
     if nt == head:
