@@ -202,3 +202,8 @@ test/
 Pandas_100_knocks-master/
 *.code-workspace
 /.DS_Store
+.specstory/
+*.mp4
+*.json
+*.png
+chromedriver

@@ -53,5 +53,9 @@
     "pythonIndent.trimLinesWithOnlyWhitespace": true,
     "python.analysis.extraPaths": [
          "/Users/atsushi/pythonMath/.venv/Lib/site-packages/"
-    ]
+    ],
+    "editor.formatOnType": true,
+    "[commonlisp]": {
+        "editor.wordSeparators": "`|;:'\",()"
+    }
 }
